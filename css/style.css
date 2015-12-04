@@ -16,3 +16,28 @@ nav .brand-logo {
  .about-list li{
   opacity: 0;
  }
+
+ /*Animation to header*/
+
+ .header:hover {
+  animation-name: pulse;
+  -webkit-animation-name: pulse;  
+
+  animation-duration: 1.5s; 
+  -webkit-animation-duration: 1.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+
+ }
+
+ .card-image:hover{
+  animation-name: tossing;
+  -webkit-animation-name: tossing;  
+
+  animation-duration: 2.5s; 
+  -webkit-animation-duration: 2.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+ }
