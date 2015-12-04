@@ -8,28 +8,79 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <div class="parallax-container" id="home-content">
-    <div class="parallax"><img src="img/test.jpg"></div>
+  <div class="parallax-container valign-wrapper" id="home-content">
+    <div class="parallax"><img src="img/giphy.gif"></div>
+      <div class="row center-align">
+        <h2 class="valign white-text"> Creative and Logical</h2>
+        <h3 class="valign white-text">Front End Designs</h3>
+      </div>
   </div>
   <nav class="transparent">
-        <div class="nav-wrapper">
-          <a href="#home-content" class="brand-logo">Ivan Baena</a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#skill-content"><i class="material-icons">code</i></a></li>
-            <li><a href="#app-content"><i class="material-icons">developer_board</i></a></li>
-            <li><a href="#about-content"><i class="material-icons">person</i></a></li>
-            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-          </ul>
-        </div>
-      </nav>
-
-  
-  <div class="container">
-    <div class="section white">
-      <div class="row">
-        <h2 class="header">Coding Skills</h2>
-    
+    <div class="nav-wrapper">
+      <a href="#home-content" class="brand-logo">Ivan Baena</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#skill-content"><i class="material-icons">code</i></a></li>
+        <li><a href="#app-content"><i class="material-icons">developer_board</i></a></li>
+        <li><a href="#about-content"><i class="material-icons">person</i></a></li>
+        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+      </ul>
     </div>
+  </nav>
+
+  <div class="container" id="skill-content">
+    <div class="section white">
+      <h2 class="header center-align">What languages do you speak?</h2>
+      <div class="row">
+        <div class="col s4">
+          <div class="card-panel teal grey lighten-3 hoverable">
+            <span class="black-text">HTML
+            </span>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card-panel grey lighten-3 hoverable">
+            <span class="black-text">CSS
+            </span>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card-panel grey lighten-3 hoverable">
+            <span class="black-text">Javascript
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="about-content">
+    <div class="section white">
+      <h2 class="header center-align">Want to know More? Take a Look!</h2>
+        <div class="row">
+        <div class="col s3 center-align">
+           <a href="#!" class="btn waves-effect waves-light" onclick="Materialize.fadeInImage('#image-test')">Click Me</a>
+           <img id="image-test" class=" circle responsive-img" src="img/imonkey.jpg">
+        </div>
+        <div class="col s4 offset-s4 center-align">
+          <a href="#!" class="btn waves-effect waves-light" onclick="Materialize.showStaggeredList('#about-list')">Click Me</a>
+          <ul id="about-list">
+            <li>
+              <a href="#!">Bio</a>
+              <p>Description</p>
+            </li>
+            <li>
+              <a href="#!">Hobbies</a>
+              <p>Description</p>
+            </li>
+            <li>
+              <a href="#!">Work</a>
+              <p>Description</p>
+            </li>
+          </ul>
+
+        </div>
+      
+    </div>
+  </div>
   </div>
 
 
