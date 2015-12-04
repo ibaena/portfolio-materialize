@@ -13,6 +13,6 @@ nav .brand-logo {
   padding-top: 10px;
   opacity: 0;
 }
- #about-list li{
+ .about-list li{
   opacity: 0;
  }
