@@ -2,8 +2,9 @@ $(document).ready(function(){
     $('.parallax').parallax();
 
       var options = [
-    {selector: '#image-test', offset: 50, callback: 'Materialize.toast("Close!", 1500 )' },
-    {selector: '#image-test', offset: 205, callback: 'Materialize.toast("Almost There!", 1500 )' },
+    {selector: '#skill-content', offset: 400, callback: 'Materialize.toast("I Speak Computer!", 1500 )' },
+    {selector: '#about-content', offset: 150, callback: 'Materialize.toast("Projects I worked on!", 1500 )' },
+    {selector: '#about-content', offset: 520, callback: 'Materialize.toast("A little about Me", 1500 )' },
     {selector: '.about-list', offset: 230, callback: 'Materialize.showStaggeredList(".about-list")' },
     {selector: '#image-test', offset: 230, callback: 'Materialize.fadeInImage("#image-test")' }
   ];
@@ -18,17 +19,17 @@ $(window).scroll(function() {
     var imagePos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+350) {
+      if (imagePos < topOfWindow+400) {
         $(this).addClass("slideExpandUp");
       }
     });
   });
 
 //app-content animation
-$('.card').css('visibility', 'hidden');
+$('.app-contain').css('visibility', 'hidden');
 
 $(window).scroll(function() {
-    $('.card').each(function(){
+    $('.app-contain').each(function(){
     var imagePos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
