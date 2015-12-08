@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  //build commits
   $(document).on("click", "a", function(e){
     e.preventDefault();
 
@@ -21,12 +23,12 @@ $(document).ready(function(){
     });
 
     function buildTableRow(commitData){
-      var shaTd = $("<td>").append(commitData.sha);
+      var commitTd = $("<td>").append(commitData.sha);
       var authorTd = $("<td>").append(commitData.author.login);
       var messageTd = $("<td>").append(commitData.commit.message);
       var dateTd = $("<td>").append(commitData.commit.author.date);
 
-      return $("<tr>").append(shaTd)
+      return $("<tr>").append(commitTd)
         .append(authorTd)
         .append(messageTd)
         .append(dateTd);
