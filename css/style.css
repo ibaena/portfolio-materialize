@@ -48,6 +48,10 @@ nav .brand-logo {
   width: 220px;
  }
 
+/*video*/
+video {
+    width: 100% !important;
+    height: auto !important;
 
-
+}
 
